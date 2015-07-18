@@ -1,0 +1,57 @@
+/*----- CORE ELEMENTS -----*/
+
+body
+  background-color: $primary-color
+  color: black
+  font-family: "Open Sans", sans-serif
+  margin: 0 0 100px
+
+header
+  margin: 0 2em 0 2em
+  border-bottom: medium solid $secondary-color
+  color: $font-color-main
+
+main
+  width: 75%
+  margin-left: 50px
+
+/*----- LINKS -----*/
+a
+  text-decoration: none
+  color: $contrast-color-dark
+  &:visited
+    color: $contrast-color-darker
+  &:hover
+    color:white
+
+/*----- ARTICLES -----*/
+article
+  margin-left: 5em
+  header
+    border-bottom: 0
+    margin-left: -30px
+
+/*----- SPECIAL ELEMENTS -----*/
+
+video
+  float: left
+  margin-right : 1em
+
+aside
+  width: 300px
+  margin: 0.5em
+  padding: 0.5em
+  background-color: $contrast-color-dark
+  color: $contrast-color-darker
+  display: inline
+  font-size: larger
+  float: right
+
+/*----- HELPERS ----- */
+.clearfix
+  *zoom: 1
+  &:after
+    clear: both
+  &:before, :after
+    content: ""
+    display: table
